@@ -45,7 +45,8 @@ let chances = 4;
 let userInput = prompt('can you guess my age?');
 while (chances) {
   if (userInput === '23') {
-    alert("that's right");
+    alert('that\'s right');
+    score++;
     break;
   } else if (userInput <= 22) {
     alert('too low');
@@ -75,22 +76,20 @@ let moviesList = [
 ];
 
 let attempts = 6;
-let userGuess = prompt('try to guess the movie');
+let userGuess = prompt('try to guess one of my top ten movies');
 while (attempts) {
   let correct = false;
   for (let i = 0; i < moviesList.length; i++) {
     if (userGuess === moviesList[i]) {
-      score++;
       correct = true;
+      score++;
       alert('this is the right answer');
       break;
     }
   }
-  if (correct === true) {
-    break;
-  }
+ 
 
-  if (attempts === 1) {
+  if (attempts === 1 ||correct===true ) {
     alert(
       'this is a correct answer , soul , mulan , sea , the act , my spy , us , ode to joy , unplanned , the hustle , the upside'
     );
