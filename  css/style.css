@@ -1,11 +1,24 @@
 h1 {
-    color: brown;
-    text-align: center;
-    background-color: cornsilk;
+  color: brown;
+  text-align: center;
+  background-color: cornsilk;
+}
+h2 {
+  color: rgb(117, 2, 2);
 }
 
 p {
-    text-align: center;
-    background-color: rgb(223, 199, 210);
-    font-size:x-large;
+  text-align: center;
+  background-color: rgb(223, 199, 210);
+  font-size: x-large;
+}
+h3 {
+  color: rgb(71, 24, 24);
+}
+ol li {
+  color: rgb(2, 2, 44);
+}
+body {
+  background-color: antiquewhite;
+  font-family: 'Libre Baskerville', serif;
 }
